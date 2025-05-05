@@ -1,0 +1,36 @@
+body{
+    font-family: 'Lucida Sans', sans-serif;
+    background: #568f99;
+    padding: 100px;
+    margin: 90px;
+
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: #a2c2ca;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.9);
+}
+
+h1{
+    text-align: center;
+    color: rgb(9, 30, 99);
+}
+
+.results {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.results p{
+    font-size: 20px;
+}
+
+.numbers {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
