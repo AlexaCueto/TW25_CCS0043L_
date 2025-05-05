@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Grade Ranking</title>
 </head>
+
 <body>
-    <?php
+    <div class="container">
+        <h1> Grade Information</h1>
+        <?php
+        //variable declaration
+         $studentName = "Alexa Joyce G. Cueto";
+        ?>
+        <div class="student-info">
+            <h2> Name: <?=$studentName; ?><h2>
+            <div class ="profile-photo">
+                <img src = "../TECHNICAL_2/number_2/alexaProfile.jpg" alt="Alexa Cueto Profile Picture">
+            </div>
+        </div>
+
+        <?php
     $grade = 100;
     $rank = " ";
 
@@ -39,7 +54,8 @@
         echo "Invalid Grade";
     }
     ?>
-
+    </div>
 
 </body>
+
 </html>
