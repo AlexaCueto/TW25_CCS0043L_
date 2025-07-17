@@ -1,0 +1,104 @@
+body {
+    font-family: 'Lucida Sans', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    background-color: #ffecd2;
+    color: #86380b;
+    background-image: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 60px;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid #fcb69f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #86380b;
+    text-align: center;
+}
+
+.student-info {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #4c1a0a;
+    padding: 20px;
+    background-color: #965b31;
+    border-radius: 10px;
+}
+
+.student-info img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 15px;
+    border: 3px solid #ffffff;
+}
+
+.student-info h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.rank-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+/* General rank styling */
+.rank-a, .rank-a-minus, .rank-b-plus, .rank-b,
+.rank-b-minus, .rank-c-plus, .rank-c,
+.rank-c-minus, .rank-d-plus, .rank-d,
+.rank-d-minus, .rank-f {
+    background-color: #c4d6e7;
+    color: #06468b;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #165d9f;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.invalid-grade {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 2px solid #f5c6cb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: #03740a;
+    padding: 10px;
+    background-color: #79f799;
+    border: 2px solid #28604b;
+    border-radius: 5px;
+}

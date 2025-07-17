@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1c1c;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1c1c1c !important;
+    border-bottom: 1px solid #444;
+}
+
+.navbar-brand {
+    color: #9e7637 !important;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #ccc !important;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #9e7637 !important;
+}
+
+/* Resume Wrapper */
+.resume-wrapper {
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 40px 50px;
+    background: #2a2a2a;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.resume-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px rgba(158, 118, 55, 0.5);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Headings */
+h2 {
+    color: #9e7637;
+    font-size: 26px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+li {
+    color: #eee;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform: translateX(5px);
+    color: #f5d8a2;
+}
+
+/* Personal Info */
+.personal-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 2px solid #9e7637;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.personal-info img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #9e7637;
+}
+
+.personal-info img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.personal-info h1 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.personal-info p {
+    color: #ccc;
+    margin: 4px 0;
+}
+
+/* Paragraphs */
+.content-section p {
+    color: #ddd;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    color: #9e7637;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    z-index: 999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .personal-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resume-wrapper {
+        padding: 25px;
+        margin: 30px 15px;
+    }
+
+    .personal-info img {
+        width: 100px;
+        height: 100px;
+    }
+}
